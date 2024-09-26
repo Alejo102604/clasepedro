@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina 5 - Animaciones</title>
+    <link rel="stylesheet" href="css/estilo1.css">
+    <style>
+        body {
+            background-color: black; /* Fondo negro */
+            color: rgb(255, 255, 255); /* Color del texto */
+        }
+        .animated-box {
+            width: 100px;
+            height: 100px;
+            margin: 20px;
+            display: inline-block;
+            background-color: rgba(255, 255, 255, 0.1); /* Fondo semitransparente */
+            border-radius: 10px;
+            animation-duration: 2s;
+            animation-fill-mode: forwards;
+        }
+        .fade-in {
+            opacity: 0;
+            animation-name: fadeIn;
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        .slide-in {
+            transform: translateX(-100%);
+            animation-name: slideIn;
+        }
+        @keyframes slideIn {
+            from {
+                transform: translateX(-100%);
+            }
+            to {
+                transform: translateX(0);
+            }
+        }
+        .rotate {
+            animation-name: rotate;
+        }
+        @keyframes rotate {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="rayita1">
+        <img src="imagesIndex/logo3.png" height="80 px">
+    </div>
+    <div id="rayita2"></div>
+    <header><img src="Banners/header1.jpg" alt="404"></header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="evolucion.html">Evolución</a></li>
+            <li><a href="banners.html">Banners</a></li>
+            <li><a href="mascotas.html">Mascotas</a></li>
+            <li><a href="amazon.html">Amazon</a></li>
+            <li><a href="pagina1.html">Pagina 1</a></li>
+            <li><a href="pagina2.html">Pagina 2</a></li>
+            <li><a href="pagina3.html">Pagina 3</a></li>
+            <li><a href="pagina4.html">Pagina 4</a></li>
+            <li><a href="pagina5.html">Pagina 5</a></li>
+            <li><a href="form.html">Formulario</a></li>
+        </ul>
+    </nav> 
+
+    <div class="profile-content">
+        <h1>PAGINA WEB</h1>
+
+        <h2>Ejemplo de Animación Fade In</h2>
+        <div class="animated-box fade-in"></div>
+
+        <h2>Ejemplo de Animación Slide In</h2>
+        <div class="animated-box slide-in"></div>
+
+        <h2>Ejemplo de Animación Rotate</h2>
+        <div class="animated-box rotate"></div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section about">
+                <h3>Sobre mí</h3>
+                <p>Desarrollador de software estudiante del Colegio Mayor del Cauca.</p>
+            </div>
+            <div class="footer-section contact">
+                <h3>Contacto</h3>
+                <ul>
+                    <li><a href="mailto:stivrojas@gmail.com">alejhaime8@gmail.com</a></li>
+                    <li><a href="tel:+123456789">+57 3205311744</a></li>
+                </ul>
+            </div>
+            <div class="footer-section social">
+                <h3>Redes Sociales</h3>
+                <ul>
+                    <li><a href="https://facebook.com" target="_blank">Facebook</a></li>
+                    <li><a href="https://twitter.com" target="_blank">Twitter</a></li>
+                    <li><a href="https://instagram.com" target="_blank">Instagram</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Alejandro Martinez O. Todos los derechos reservados.</p>
+        </div>
+    </footer>   
+</body>
+</html>

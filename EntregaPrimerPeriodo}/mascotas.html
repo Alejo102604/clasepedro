@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mascotas</title>
+    <link rel="stylesheet" href="css/estilo1.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .carousel-item img {
+            width: 400px; /* Ancho fijo */
+            height: 600px; /* Altura fija */
+            object-fit: cover; /* Mantiene las proporciones de la imagen */
+        }
+        .unordered-list img, .ordered-list img {
+            width: 200px; /* Ancho fijo para imágenes en las listas */
+            height: 200px; /* Altura fija para imágenes en las listas */
+            object-fit: cover; /* Mantiene las proporciones de la imagen */
+            margin-right: 10px; /* Espacio entre la imagen y el texto */
+        }
+    </style>
+</head>
+<body>
+    <div id="rayita1">
+        <img src="imagesIndex/logo3.png" height="80 px">
+    </div>
+    <div id="rayita2"></div>
+    <header><img src="Banners/header1.jpg" alt="404"></header>
+    <nav>
+        <ul>
+            <li><a href="index.html"> Inicio </a></li>
+            <li><a href="evolucion.html"> Evolución </a></li>
+            <li><a href="banners.html"> Banners </a></li>
+            <li><a href="mascotas.html"> Mascotas </a></li>
+            <li><a href="amazon.html"> Amazon </a></li>
+            <li><a href="pagina1.html">Pagina 1</a></li>
+            <li><a href="pagina2.html">Pagina 2</a></li>
+            <li><a href="pagina3.html">Pagina 3</a></li>
+            <li><a href="pagina4.html">Pagina 4</a></li>
+            <li><a href="pagina5.html">Pagina 5</a></li>
+            <li><a href="form.html">Formulario</a></li>
+        </ul>
+    </nav> 
+    <section>
+        <h2>Mascotas</h2>
+        <p>Esta página está dedicada a nuestras adorables mascotas.</p>
+    </section>
+
+    <div id="miCarrusel" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#miCarrusel" data-slide-to="0" class="active"></li>
+            <li data-target="#miCarrusel" data-slide-to="1"></li>
+            <li data-target="#miCarrusel" data-slide-to="2"></li>
+            <li data-target="#miCarrusel" data-slide-to="3"></li>
+            <li data-target="#miCarrusel" data-slide-to="4"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="imagesViñetas/perro1.png" class="d-block w-100" alt="Perro 1">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Perro en el parque</h5>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="imagesViñetas/gato2.png" class="d-block w-100" alt="Gato 1">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Gato descansando</h5>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="imagesViñetas/gato1.png" class="d-block w-100" alt="Perro 2">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Perro feliz</h5>
+                </div>    
+            </div>
+            <div class="carousel-item">
+                <img src="imagesViñetas/perro2.png" class="d-block w-100" alt="Gato 2">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Gato jugando</h5>
+                </div>    
+            </div>
+            <div class="carousel-item">
+                <img src="imagesViñetas/perroyhumano.webp" class="d-block w-100" alt="Perro 3">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Perro y su dueño</h5>
+                </div>    
+            </div>
+            <a class="carousel-control-prev" href="#miCarrusel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Anterior</span>
+            </a>
+            <a class="carousel-control-next" href="#miCarrusel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Siguiente</span>
+            </a>
+        </div>
+    </div>
+    <!-- Incluye el JavaScript de jQuery y Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <main>
+        <section>
+            <h2>Listas desordenadas</h2>
+            <h2>Perros</h2>
+            <ul class="unordered-list">
+                <li> 
+                    <img src="imagesViñetas/perro1.png" alt="Perro 4">
+                    <p>Los perros son conocidos como los mejores amigos del hombre, son leales y siempre están listos para jugar.</p>
+                </li>
+                <li>
+                    <img src="imagesViñetas/perroyhumano.webp" alt="Perro 5">
+                    <p>Los perros tienen una gran variedad de razas, cada una con su propia personalidad.</p>
+                </li>
+                <li>
+                    <img src="imagesViñetas/perro2.png" alt="Perro 6">
+                    <p>Los perros requieren ejercicio diario y son excelentes compañeros para paseos al aire libre.</p>
+                </li>
+            </ul>
+        </section>
+        
+        <section>
+            <h2>Listas Ordenadas</h2>
+            <h2>Gatos</h2>
+            <ol class="ordered-list">
+                <li>
+                    <img src="imagesViñetas/gato1.png" alt="Gato 3">
+                    <p>Los gatos son animales independientes y suelen disfrutar de su tiempo a solas.</p>
+                </li>
+                <li>
+                    <img src="imagesViñetas/gato2.png" alt="Gato 4">
+                    <p>Los gatos son cazadores natos y les encanta jugar con juguetes que simulan presas.</p>
+                </li>
+                <li>
+                    <img src="imagesViñetas/gato3.png" alt="Gato 5">
+                    <p>Los gatos son conocidos por sus suaves ronroneos que pueden ser muy reconfortantes.</p>
+                </li>
+            </ol>
+        </section>
+        
+        <section>
+            <h2>Lista en orden y desorden</h2>
+            <h2>Otros Animales</h2>
+            <ul class="unordered-list">
+                <h2>Conejos</h2>
+                <ol>
+                    <li>
+                        <img src="imagesViñetas/conejo1.png" alt="Conejo 1">
+                        <p>Los conejos son adorables y requieren mucho cuidado y atención.</p>
+                    </li>
+                    <li>
+                        <img src="imagesViñetas/conejo2.png" alt="Conejo 2">
+                        <p>Los conejos son herbívoros y necesitan una dieta rica en heno y verduras frescas.</p>
+                    </li>
+                </ol>
+                <h2>Hámsters</h2>
+                <ol>
+                    <li>
+                        <img src="imagesViñetas/hamster1.png" alt="Hámster 1">
+                        <p>Los hámsters son pequeñas y adorables mascotas que son muy fáciles de cuidar.</p>
+                    </li>
+                    <li>
+                        <img src="imagesViñetas/hamster2.png" alt="Hámster 2">
+                        <p>Los hámsters son activos y necesitan una jaula espaciosa para explorar.</p>
+                    </li>
+                </ol>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Alejandro Martinez O . Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,429 @@
+body{
+    background-color: #000000;
+    margin: 0%;
+    
+}
+
+#rayita1{
+    width: 100%;
+    height: 30px;
+    background-color: rgb(26, 26, 26);
+}
+
+#rayita2{
+    width: 100%;
+    height: 30px;
+    background-color:#000000;
+}
+h1{
+    color: #ff0000;
+}
+header{
+    overflow: hidden;
+    background-color: black;
+    width: 100%;
+    z-index: 100;
+    height: 450px;
+}
+
+header img{
+    width: 100%;
+    height: 100%;
+}
+
+nav{
+    float: left;
+    background-color: black;
+    width: 100%;
+}
+
+nav ul{
+    list-style: none;
+    overflow: hidden;
+}
+
+nav ul li{
+    float: left;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+nav ul li a{
+    display: block;
+    padding: 15px;
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li:hover{
+    background: #eca023;
+}
+section {
+    display: block;
+    margin-top: 100px;
+    margin-left:360px;
+    max-width:50%;
+    font-family: Arial, Helvetica, sans-serif, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: x-large;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+main {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para las secciones */
+section {
+    margin-bottom: 20px;
+}
+/* Estilo para la lista desordenada */
+.unordered-list {
+    list-style: disc; /* Mantiene los puntos de la lista */
+    list-style-position: inside; /* Los puntos se colocan dentro del contenedor de lista */
+    padding-left: 20px; /* Alinea los puntos */
+    margin: 0;
+}
+
+.unordered-list {
+    list-style: disc; /* Mantiene los puntos de la lista */
+    list-style-position: inside; /* Los puntos se colocan dentro del contenedor de lista */
+    padding: 0;
+    margin: 0;
+    display: flex; /* Hace que los elementos se alineen horizontalmente */
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan si el espacio es insuficiente */
+}
+
+
+.unordered-list img {
+    max-width: 100px;
+    height: auto;
+    margin-right: 15px;
+    border-radius: 5px;
+}
+
+.unordered-list p {
+    margin: 0;
+    font-size: 1em;
+    color: #555;
+}
+
+.ordered-list {
+    padding: 0;
+    margin: 0;
+    display: flex; /* Hace que los elementos se alineen horizontalmente */
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan si el espacio es insuficiente */
+}
+
+
+.ordered-list li {
+    margin-bottom: 10px;
+    padding: 5px 0;
+    border-bottom: 1px solid #ddd;
+    font-size: 1em;
+    color: #ff0000;
+}
+
+
+.profile {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: auto;
+}
+
+.profile-content {
+    flex: 1;
+    padding: 20px;
+}
+
+.profile-content p {
+    font-size: 1.1rem;
+    color: #333;
+}
+
+.profile-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.profile-image img {
+    max-width: 400px;
+    height: 400px;
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .profile-section {
+        flex-direction: column;
+    }
+
+    .profile-image {
+        padding: 10px;
+    }
+}
+/* Estilos para el aside (barra lateral) */
+.sidebar {
+    background-color: #f4f4f4; 
+    border: 1px solid #ddd; 
+    border-radius: 8px; 
+    padding:50px;
+    width: 100%; 
+    margin-top: 15px;
+    max-width: 300px; 
+    margin-left: auto; 
+    margin-right: 0;
+}
+
+.sidebar h2 {
+    font-size: 1.6em; 
+    color: #000000; 
+    border-bottom: 2px solid #3498db; 
+    padding-bottom: 10px; 
+    margin-bottom: 20px; 
+}
+
+.widget {
+    margin-bottom: 20px; 
+}
+
+.widget h3 {
+    font-size: 1.4em; 
+    color: #444; 
+    margin-bottom: 10px; 
+}
+
+.widget ul {
+    list-style: none; 
+    padding: 0; 
+    margin: 0; 
+}
+
+.widget ul li {
+    margin-bottom: 10px; 
+}
+
+.widget ul li a {
+    text-decoration: none; 
+    color: #3498db; 
+    font-size: 1em;
+}
+
+.widget ul li a:hover {
+    text-decoration: underline; 
+    color: #2980b9; 
+}
+/* Estilos para la galería de fotos */
+.gallery {
+    background-color: #000000;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.gallery h2 {
+    font-size: 1.6em;
+    color: #333;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+.ban{
+    font-size: 1.6em;
+    color: #ffffff;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 10px;
+}
+
+.gallery-grid img {
+    width: 100%;
+    height: 70%;
+    border-radius: 8px;
+    object-fit: cover; /* Ajusta la imagen para cubrir el área sin distorsionar */
+    transition: transform 0.3s ease;
+    margin-bottom: 20px;
+}
+
+.gallery-grid img:hover {
+    transform: scale(1.05); /* Efecto de zoom al pasar el ratón */
+}
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form div {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #ffffff;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+textarea {
+    resize: vertical;
+    height: 150px;
+}
+
+button {
+    background-color: #242323;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #ff0000;
+}
+
+/* Footer Styling */
+.footer {
+    background-color: #000000;
+    color: #ecf0f1;
+    padding: 20px 0;
+    font-family: Arial, sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-section {
+    flex: 1;
+    margin: 0 20px;
+}
+
+.footer-section h3 {
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+    font-size: 1.2em;
+}
+
+.footer-section p,
+.footer-section ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    color: #ecf0f1;
+    text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 10px;
+    border-top: 1px solid #34495e;
+    margin-top: 20px;
+}
+
+.footer-bottom p {
+    margin: 0;
+    font-size: 0.9em;
+}
+.amazon-content {
+    background-color: #222; /* Color de fondo oscuro */
+    padding: 40px; /* Espaciado interno */
+    border-radius: 10px; /* Bordes redondeados */
+    text-align: center; /* Centra el texto */
+    color: white; /* Color del texto */
+
+     margin: 0 auto; /* Hace que el contenedor se centre horizontalmente */
+    max-width: 1200px; /* Define un ancho máximo para el contenedor */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Añade sombra para resaltar */
+}
+
+.amazon-content h1 {
+    font-size: 2.5rem; /* Tamaño del título */
+    margin-bottom: 20px; /* Separación debajo del título */
+}
+
+.amazon-content p {
+    font-size: 1.2rem; /* Tamaño del párrafo */
+    margin-bottom: 30px; /* Separación debajo del párrafo */
+}
+
+.amazon-image {
+    display: flex;
+    justify-content: center; /* Centra las imágenes horizontalmente */
+    gap: 20px; /* Espacio entre las imágenes */
+}
+
+.amazon-image img {
+    width: 500px; /* Ajusta el ancho de las imágenes */
+    height: 300px; /* Ajusta el alto de las imágenes */
+    border-radius: 10px; /* Bordes redondeados de las imágenes */
+    object-fit: cover; /* Mantiene las proporciones de las imágenes */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Sombra para las imágenes */
+}
+.gradient-container {
+    background: rgba(255, 255, 255, 0.8); /* Fondo blanco semitransparente */
+    background: linear-gradient(to right, rgba(255, 0, 150, 0.5), rgba(0, 204, 255, 0.5)); /* Degradado de rosa a azul */
+    border-radius: 15px; /* Bordes redondeados */
+    padding: 20px; /* Espaciado interno */
+    text-align: center; /* Centra el texto */
+    max-width: 600px; /* Ancho máximo */
+    margin: 20px auto; /* Centrado horizontal con margen */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Sombra para dar profundidad */
+  }
+  
+  h1 {
+    color: #333; /* Color del encabezado */
+  }
+  
+  p {
+    color: #666; /* Color del texto */
+  }
+  

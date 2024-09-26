@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina Avanzada</title>
+    <link rel="stylesheet" href="css/estilo1.css">
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+        .svg-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            margin: 20px;
+        }
+        svg {
+            width: 200px;
+            height: 200px;
+            margin: 20px;
+        }
+        .editable-content {
+            border: 1px dashed white;
+            padding: 10px;
+            margin: 20px;
+            min-height: 100px;
+        }
+        @media (max-width: 600px) {
+            svg {
+                width: 150px;
+                height: 150px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="rayita1">
+        <img src="imagesIndex/logo3.png" height="80 px">
+    </div>
+    <div id="rayita2"></div>
+    <header><img src="Banners/header1.jpg" alt="404"></header>
+    <nav>
+        <ul>
+            <li><a href="index.html"> Inicio </a></li>
+            <li><a href="evolucion.html"> Evolución </a></li>
+            <li><a href="banners.html"> Banners </a></li>
+            <li><a href="mascotas.html"> Mascotas </a></li>
+            <li><a href="amazon.html"> Amazon </a></li>
+            <li><a href="pagina1.html">Pagina 1</a></li>
+            <li><a href="pagina2.html">Pagina 2</a></li>
+            <li><a href="pagina3.html">Pagina 3</a></li>
+            <li><a href="pagina4.html">Pagina 4</a></li>
+            <li><a href="pagina5.html">Pagina 5</a></li>
+            <li><a href="form.html">Formulario</a></li>
+        </ul>
+    </nav> 
+    <div class="profile-content">
+        <h1> Gráficos Vectoriales y Contenido Editable </h1>
+
+        <div class="svg-container">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+                <circle cx="50" cy="50" r="40" fill="blue"/>
+                <text x="50" y="55" font-size="20" text-anchor="middle" fill="white">SVG 1</text>
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+                <rect width="80" height="80" x="10" y="10" fill="red"/>
+                <text x="50" y="55" font-size="20" text-anchor="middle" fill="white">SVG 2</text>
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+                <polygon points="50,10 90,90 10,90" fill="green"/>
+                <text x="50" y="55" font-size="20" text-anchor="middle" fill="white">SVG 3</text>
+            </svg>
+        </div>
+
+        <h2>Contenido Editable</h2>
+        <div class="editable-content" contenteditable="true">
+            Este contenido es editable. Puedes modificar este texto como desees.
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section about">
+                <h3>Sobre mí</h3>
+                <p>Desarrollador de software estudiante del Colegio Mayor del Cauca.</p>
+            </div>
+            <div class="footer-section contact">
+                <h3>Contacto</h3>
+                <ul>
+                    <li><a href="mailto:stivrojas@gmail.com">alejhaime8@gmail.com</a></li>
+                    <li><a href="tel:+123456789">+57 3205311744</a></li>
+                </ul>
+            </div>
+            <div class="footer-section social">
+                <h3>Redes Sociales</h3>
+                <ul>
+                    <li><a href="https://facebook.com" target="_blank">Facebook</a></li>
+                    <li><a href="https://twitter.com" target="_blank">Twitter</a></li>
+                    <li><a href="https://instagram.com" target="_blank">Instagram</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Alejandro Martinez O. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>
